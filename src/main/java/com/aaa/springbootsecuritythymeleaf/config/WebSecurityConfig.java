@@ -36,7 +36,7 @@ public class WebSecurityConfig
             .permitAll()
             .and()
             //允许不登陆就可以访问的方法，多个用逗号分隔
-            .authorizeRequests().antMatchers("/test","/user/**").permitAll()
+            .authorizeRequests().antMatchers("/test","/user/**","/register").permitAll()
             //其他的需要授权后访问
             .anyRequest().authenticated()
             .and()

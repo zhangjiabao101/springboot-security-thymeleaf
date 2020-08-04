@@ -12,5 +12,6 @@
     <!-- ${session?.SPRING_SECURITY_LAST_EXCEPTION?.message} security自带的错误提示信息 -->
     <p th:if="${param.error}" th:text="${session?.SPRING_SECURITY_LAST_EXCEPTION?.message}" ></p>
 </form>
+<a th:href="@{/register}">注册</a>
 </body>
 </html>

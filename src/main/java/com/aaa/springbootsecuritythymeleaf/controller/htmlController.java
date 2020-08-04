@@ -33,4 +33,15 @@ public class htmlController {
         modelAndView.addObject("error", error);
         return modelAndView;
     }
+
+
+    /**
+     * 自定义注册页面
+     * @return
+     *
+     */
+    @RequestMapping("/register")
+    public ModelAndView register(){
+        return new ModelAndView("register");
+    }
 }
